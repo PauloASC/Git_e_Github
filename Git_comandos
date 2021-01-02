@@ -18,5 +18,9 @@ git commit -m 'Seu commit' - O git add adiciona o arquivo a algo chamado contain
 tecnicamente não faz parte do arquivo ele é só um historico. Para mandar o cantainer para
 o git utiliza-se este comando. Ao utiliza-lo, os arquivos estão oficialmete no repositorio.
 Você pode escrever o que bem quiser. Mas o certo é escrever em poucas palavras o que foi
-alterado como 'Correção de bugs no arquivo x.py', 'Implemntada função de contagem'
+alterado como 'Correção de bugs no arquivo x.py', 'Implemntada função de contagem' ou
+'Criação de arquivo P.py'
 
+git log - Com este comando é possivel ver todo o historico de commits feito no 
+repositorio. Mas vale lembrar que isto esta relacionado a comandos. Se você não der ao
+menos git commit ele não vai aparecer no arquivo.
