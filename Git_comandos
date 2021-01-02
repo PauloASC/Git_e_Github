@@ -1,0 +1,35 @@
+ O git ira dar iniciar o projeto e criar uma pasta invisivel para o 
+sistema chamada .git .Porem ela é visivel para a cmd então da para acessa-la desta maneira
+esta pasta serve para o git saber o que esta sendo feito no projeto
+git init
+
+Depois disso é recomendado fazer configurações minimas de usuario
+
+Todo mundo do computador pode utilizar o repositorio
+git config --system
+
+Se é para nós em todos os projetos do git. Quando você iniciar outro
+projeto na mesma maquina, ja vai estar configurado
+git config --global
+
+Permite ser utilizado por outros usuarios do github
+git config --local
+
+Para utilizar o git --global
+git --global user.name seuusuario
+git --global user.email seu seuemail@mail.com
+
+É possivel ver todas as configurações feitas ao utilizar
+git config --global -l
+
+Para saber o status de seu projeto existe o comando
+git status
+
+Ao ver um arquivo com o git status, pode se notar que existem arquivos em vermelho. Isso
+Occorre pois eles são untracked(não rastreado). Para resolver isso existem duas maneiras
+
+git add nome_do _arquivo
+
+E
+
+git add .
