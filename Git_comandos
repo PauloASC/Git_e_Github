@@ -24,3 +24,6 @@ alterado como 'Correção de bugs no arquivo x.py', 'Implemntada função de con
 git log - Com este comando é possivel ver todo o historico de commits feito no 
 repositorio. Mas vale lembrar que isto esta relacionado a comandos. Se você não der ao
 menos git commit ele não vai aparecer no arquivo.
+
+git commit -am 'Seu comentário' - Este comado não apenas faz um commit, mas tambem
+realiza a função feita pelo git add .
