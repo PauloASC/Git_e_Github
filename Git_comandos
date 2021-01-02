@@ -27,3 +27,71 @@ menos git commit ele não vai aparecer no arquivo.
 
 git commit -am 'Seu comentário' - Este comado não apenas faz um commit, mas tambem
 realiza a função feita pelo git add .
+
+O git não faz mutiplas versões de um arquivo, ele simplesmente deixa em um arquivo o 
+historico de alterações. Armazenando somente as alterações feitas
+
+git checkout hash_do_ponto - Ao fazer um commit é criado um código para a alteração
+do container. Com este código o git sabe o que foi feito em uma versão especifica do 
+arquivo e permite que ela seja utilizada. Para obter esse numero é só utilizar o git log
+e pegar o código depois da palavra commit
+
+git checkout master - Fazendo isto se retorna para a versão mais recente do seu repositorio
+
+git checkout nome_do_arquivo - Serve para descartar alterações feitas no arquivo
+
+git diff - Com este comando é possivel ver a diferença entre o commit feito e o que você
+alterou ou adicionou agora
+
+git reset HEAD nome_do_arquivo - Este comando reseta o que esta dentro o container. 
+Impedido que va para o repositorio
+
+git branch - No Git existem os branches ou ramos. Eles servem para criar um tipo de clone
+do seu repositorio, que permite que você altere tudo o que você precisar sem afetar o
+repositorio de verdade. O simples comando git branch serve apenas para ver em qual branch
+nós estamos.
+
+git checkout -b ramo_nome - Este é o comado que cria um ramo em seu repositorio. Por 
+padrão todos os commits que você fizer apos a criação do branch vão ser atribuidos a ele.
+O branch funciona normalmente. Todos os comandos irão funcionar e todos os commits serão
+herdados nesse branch.
+
+git checkout master - Este comando serve para sair de detro do branch e retornar para o 
+branch master. Ao voltar ao ramo master todas as alterações feitas no seu branch irão
+"desaparecer". As alterações ainda existem, o que ocorre é que elas estão ligadas
+somente ao branch.
+
+git merge ramo_nome - Este comando server para unir o branch ao ramo master. O que foi 
+alterado no branch ira ser adicionado ao master e ser parte do arquivo. Porem podem existir
+conflitos. Por exemplo: Existe o aqrquivo CPF.py. Se na linha 1 da master estiver escrito
+Numeros, e na linha 1 da branch estiver escrito digitos, isso ira gerar um conflito.
+Para resolver este conflito, no Visual Studio Code aparece uma opção no arquivo, 
+perguntando qual alteração você deseja aceitar. Escolha se você quer ficar com o que esta
+no master ou no seu branch. 
+
+git remote - Este comando verifica se esse repositorio existe no GitHub.
+
+
+git remote add origin https://github.com/PauloASC/1_Git-Github.git - Este comando serve
+para ligar o repositorio local ao repositorio no GitHub. Mas antes disso você precisa 
+criar um repositório no GitHub com o mesmo nome da pasta do projeto. Não é  complicado.
+Apenas faça login(caso não tenha um crie uma conta). Na pagina principal (github.com),
+você ira encontrar um botão escrito New. De nome ao repositorio, coloque uma descrição se
+desejar ou precisar. E para finalizar você deve clicar em create repository no final da 
+pagina. Depois de criado você sera redirecionado para a pagina com o seu github vazio 
+e algumas instruções, nelas o link que deve ser colocado junto ao comando git remote add origin
+
+git push -u origin master - Ele ira dar o ponta pé para mandar o conteudo do repositorio
+para o github. 
+
+git push -u - origin master precisa ser adicionado somente na primeira vez em que você
+faz o envio do repositorio. Todas as outras não necessitam disso
+
+git clone https://github.com/PauloASC/git_clone_exemplo.git - Este comando ira clonar
+um repositorio que existe no github em sua maquina. Para obter a "url" para fazer o clone 
+você precisa ir no repositorio e clicar em code*, la ira aparecer o codigo https a ser
+utilizado. 
+*No momento em que eu escrevi isto é code. Podem haver alterações ao longo
+do tempo
+
+
