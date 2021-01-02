@@ -25,8 +25,10 @@ git log - Com este comando é possivel ver todo o historico de commits feito no
 repositorio. Mas vale lembrar que isto esta relacionado a comandos. Se você não der ao
 menos git commit ele não vai aparecer no arquivo.
 
-git commit -am 'Seu comentário' - Este comado não apenas faz um commit, mas tambem
-realiza a função feita pelo git add .
+git commit -am 'Seu comentário' - Este comado não apenas faz um commit, mas também 
+adiciona as modificações do arquivo. Porem ele não tem a função de rastrear. Isso quer
+dizer que esse comando é inutil se você criar um novo arquivo. Se criar outro arquivo
+sera necessario utilizar o git add .
 
 O git não faz mutiplas versões de um arquivo, ele simplesmente deixa em um arquivo o 
 historico de alterações. Armazenando somente as alterações feitas
